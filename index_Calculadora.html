@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/346/346399.png" class="img/x-icon">
+</head>
+
+<body style="background-color: aliceblue;">
+    <center>
+        <div class="container">
+            <div class="card border-dark m-3" style="max-width: 40rem;">
+                <div class="card-header" style="background-color: rgb(210, 229, 255);">
+                    <h5>Calculadora</h5>
+                </div>
+                <div class="card-body float-center">
+                    <div class="row">
+                        <div class="col 3">
+                            <img src="https://cdn-icons-png.flaticon.com/512/346/346399.png" alt="calculadora"
+                                class="img-fluid">
+                        </div>
+                        <div class="col-5">
+                            <br>
+                            <input class="m-1 float-left" placeholder="Ingresar Número" type="number" id="num1">
+                            <input class="m-1 float-left" placeholder="Ingresar Número" type="number" id="num2"><br><br>
+                        </div>
+                        <div class="col-4">
+                            <br>
+                            <button class="btn btn-outline-dark" onclick="sumar()"
+                                style="background-color: rgb(210, 229, 255);">
+                                Sumar</button>
+                            <button class="btn btn-outline-dark" onclick="restar()"
+                                style="background-color: rgb(210, 229, 255);">
+                                Restar</button><br>
+                            <button class="btn btn-outline-dark" onclick="multiplicar()"
+                                style="background-color: rgb(210, 229, 255);">
+                                Multiplicar</button>
+                            <button class="btn btn-outline-dark" onclick="dividir()"
+                                style="background-color: rgb(210, 229, 255);">
+                                Dividir</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h4 style="text-align: left;">Historial</h4>
+            <table class="table table-hover">
+                <thead>
+                    <th>Operación</th>
+                    <th>Resultado</th>
+                </thead>
+                <tbody id="tresulados">
+
+                </tbody>
+            </table>
+        </div>
+    </center>
+
+    <script src="calculadora.js"></script>
+</body>
+
+</html>
